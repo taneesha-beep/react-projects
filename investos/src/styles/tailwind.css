@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Base resets and safe color scheme */
+:root { color-scheme: light; }
+html, body, #root { height: 100%; }
+
+body {
+  @apply bg-pastel-50 text-slate-800 antialiased;
+  font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+}
+
+/* App card style (soft glass on pastel) */
+.card {
+  @apply bg-blue-50 border border-blue-100 rounded-2xl shadow-sm;
+}
+
+/* Buttons */
+.btn {
+  @apply inline-flex items-center justify-center gap-2 rounded-xl-2 px-5 py-2.5 font-semibold transition-shadow;
+  background: linear-gradient(180deg, rgba(111,207,255,0.95), rgba(83,183,255,0.95));
+  box-shadow: 0 6px 18px rgba(83,183,255,0.12);
+  color: #02263b; /* deep slate for contrast */
+}
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 26px rgba(83,183,255,0.16);
+}
+
+/* Secondary button (outline) */
+.btn-outline {
+  @apply inline-flex items-center justify-center gap-2 rounded-xl-2 px-4 py-2 text-sm border;
+  border-color: rgba(15, 76, 129, 0.06);
+  background: transparent;
+  color: #0f537f;
+}
+.btn-outline:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 26px rgba(83,183,255,0.16);
+}
+
+/* Headings */
+.h1 {
+  @apply text-4xl md:text-5xl font-extrabold leading-tight text-slate-900;
+}
+
+/* Subtext */
+.lead {
+  @apply mt-3 text-slate-700 text-lg md:text-xl max-w-xl;
+}
+
+/* Centered hero container helpers */
+.hero-center {
+  min-height: calc(100vh - 120px); /* leave space for nav/footer */
+  display: grid;
+  place-items: center;
+  padding: 2rem;
+}
+
+/* Small utility */
+.kicker {
+  @apply inline-block px-3 py-1 rounded-full text-sm font-medium bg-pastel-100 text-pastel-700 border border-white/60;
+}
