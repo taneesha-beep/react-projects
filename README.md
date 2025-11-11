@@ -5,7 +5,7 @@ WORKING:
 User takes a short quiz, investos analyzes user’s risk tolerance, confidence, and investor persona, then suggests a mix of assets like equity, gold etc.
 
 TECH STACK:
-Frontend: React + TypeScript
+Frontend: React & TypeScript
 Build: Vite
 Style: Tailwind CSS
 
