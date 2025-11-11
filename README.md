@@ -4,6 +4,9 @@ Investos is a simple website that helps users understand what kind of investor t
 WORKING:
 User takes a short quiz, investos analyzes user’s risk tolerance, confidence, and investor persona, then suggests a mix of assets like equity, gold etc.
 
+<img width="1440" height="787" alt="Screenshot 2025-11-11 at 11 42 13 PM" src="https://github.com/user-attachments/assets/1947ad7a-c135-4a24-a534-04681c85cf36" />
+
+
 TECH STACK:
 - Frontend: React & TypeScript
 - Build: Vite
